@@ -42,7 +42,9 @@ export default function TaskList() {
     getList();
   }, [page, itemsPerPage, searchTerm]);
 
-  // Open modal for add/edit
+  
+
+  // open models
   const openModal = (task = null) => {
     setEditTask(task);
     setFormData(
@@ -57,7 +59,7 @@ export default function TaskList() {
     setModalOpen(true);
   };
 
-  // Handle modal submit
+  // handel submit for create and edit task
   const handleModalSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -77,13 +79,13 @@ export default function TaskList() {
     }
   };
 
-  // Open confirmation modal
+  // oepn delete confirm 
   const openConfirm = (task) => {
     setTaskToDelete(task);
     setConfirmOpen(true);
   };
 
-  // Delete task after confirmation
+  // delete task
   const handleConfirmDelete = async () => {
     try {
       const res = await axiosInstance.delete(`/tasks/${taskToDelete._id}`);
@@ -98,7 +100,6 @@ export default function TaskList() {
 
   return (
     <div className="w-full p-6 min-h-screen">
-      {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-semibold">Task List</h1>
         <button
@@ -109,7 +110,6 @@ export default function TaskList() {
         </button>
       </div>
 
-      {/* Search */}
       <div className="mb-4">
         <input
           type="text"
@@ -120,7 +120,6 @@ export default function TaskList() {
         />
       </div>
 
-      {/* Table */}
       <div className="overflow-x-auto bg-white shadow-xl rounded-lg">
         <table className="w-full text-left border-collapse">
           <thead className="bg-gray-100">
