@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import AuthLayout from "./layoutes/AuthLayout";
-import MainLayout from "./layoutes/mainLayout";
+import MainLayout from "./layoutes/MainLayout.jsx";
 import Task from "./pages/TaskList.jsx";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
