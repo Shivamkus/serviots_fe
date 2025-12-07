@@ -4,12 +4,12 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import AuthLayout from "./layoutes/AuthLayout";
-import MainLayout from "./layoutes/MainLayout.jsx";
-import Task from "./pages/TaskList.jsx";
+import MainLayout from "./layoutes/MainLayout";
+import Task from "./pages/TaskList";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";
-import PublicLayout from "./layoutes/PublicLayout.jsx";
+import PublicLayout from "./layoutes/PublicLayout";
 
 export default function App() {
   return (
