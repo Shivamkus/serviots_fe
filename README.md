@@ -24,30 +24,30 @@ sudo apt install nodejs npm
 
 git clone https://github.com/Shivamkus/serviots_fe.git
 
-# Navigate Into the Folder
+## Navigate Into the Folder
 
 cd serviots_fe
 
-# Install All Dependencies
+## Install All Dependencies
 
-# Using npm
+## Using npm
 npm install
 
-# Using yarn
+## Using yarn
 yarn install
 
-# Using pnpm
+## Using pnpm
 pnpm install
 
 
-# Start Development Server
+## Start Development Server
 Start Development Server
 
 1) npm run dev
 
 2) http://localhost:5173/
 
-# Build for Production
+## Build for Production
 npm run build
 
 # Preview Production Build
