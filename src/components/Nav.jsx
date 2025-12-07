@@ -14,7 +14,7 @@ export default function Nav() {
   const token = localStorage.getItem("token");
   const handleLogout = async () => {
     localStorage.removeItem("token");
-    toast.succes("logout successfully");
+    toast.success("logout successfully");
     navigate("/");
   };
 
